@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información Juvenil Dr. Velasco</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link  rel="icon" href="img/favicon.ico" type="image/ico"/>
+
+</head>
+<body>
+    <header id="inicio">
+        <div class="menu">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo de la casa de cultura">
+                <h1>Casa de cultura <br> Dr. Velasco</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#horarios" id="btn-horarios">Horario</a></li>
+                    <li><a href="index.html#ubicacion" id="btn-ubicacion">Ubicación</a></li>
+                    <li><a href="biblioteca.html">Biblioteca</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="inforjuv.html">Infor. Juvenil</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+              <!-- Aqui lo que he hecho ha sido crear un menú de navegación--->
+        </div>
+    </header>
+    <main>
+        <div class="info-juv">
+            <dl>
+                <dt>¿Qué es el punto de Información Juvenil?</dt>
+                <dd>El Punto de Información Juvenil es el espacio donde los jóvenes pueden solicitar y acceder a todo tipo de información que sea de su interés, así como recibir asesoramiento u orientación sobre diversas temáticas.</dd>    
+            </dl>
+            <img src="img/informacionjuvenil.jpg" alt="Foto de punto de información de algún lugar que desconozco.">
+        </div>
+        <div class="carnet-juv">
+            <div class="explicacion">
+                <dl>
+                    <dt>¿Qué es el carné Joven Europeo?</dt>
+                    <dd>El Carné Joven es un programa para jóvenes de de 12 a 30 años ambos inclusive que ofrece un gran número de ventajas y descuentos especiales en tus compras y en varios servicios: actividades culturales, deportivas o lúdicas, transporte,alojamiento, viajes etc.
+                    <br>
+                    Este carné lo puedes utilizar en cualquier comunidad autónoma de nuestro país y en 37 países más.</dd>
+                </dl>
+                <img src="img/carne.jpg" alt="Foto del carné juvenil">
+            </div>
+            <!-- Aqui he creado las listas de definición de lo que es el punto de información y el carné joven europeo. -->
+            <ol class="ventajas">
+                <li>Obtener descuentos de hasta un 50%.</li>
+                    <ol>
+                        <li>En transportes como Renfe y ALSA.</li>
+                        <li>En alojamientos como Hoteles Holiday Inn Express y el Grupo Sol Meliá</li>
+                        <li>En los museos Estatales.</li>
+                        <li>En centro de estudios como CCC, Abroad, CEDEU...</li>
+                        <li>Y otros servicios como por ejemplo SpainBox.</li>
+                    </ol>
+            </ol>
+            <!-- He enumerado las ventajas con una lista ordenada. -->
+            <form action="#">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="texto">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" class="texto">
+                <label for="DNI">DNI</label>
+                <input type="text" class="texto">
+                <label for="F-DNI">Foto de la cara delantera del DNI</label>
+                <input type="file">
+                <label for="direccion">Direccion</label>
+                <input type="text" class="texto">
+                <label for="telefono">Numero de teléfono</label>
+                <input type="number" class="texto">
+                <p>Forma de pago: </p>
+                
+                <div class="metodo-pago">
+                    <div class="pago-credito">
+                        <input type="radio" name="pago" value="credito" id="credito">
+                        <label for="credito" class="label-radio">Tarjeta de credito</label>
+                    </div>
+                    <div class="pago-transferencia">
+                        <input type="radio" name="pago" value="transferencia" id="transferencia"> 
+                        <label for="transferencia" class="label-radio">Transferencia bancaria</label> 
+                    </div>
+                    <div class="pago-paypal">
+                        <input type="radio" name="pago" value="paypal" id="paypal">
+                        <label for="paypal" class="label-radio">Paypal</label>
+                    </div>
+                    <div class="pago-oficina">
+                        <input type="radio" name="pago" value="oficina" id="oficina">
+                        <label for="oficina" class="label-radio">En oficina</label>
+                    </div>
+                </div>
+                <p>Envío:</p>
+                <div class="metodo-envio">
+                    <div class="metodo-informacion">
+                        <input type="radio" name="envio" value="pinf" id="pinf">
+                        <label for="pinf" class="label-radio">Recogida en punto de información</label>
+                    </div>
+                    <div class="metodo-direccion">
+                        <input type="radio" name="envio" value="direcion" id="direccion">
+                        <label for="direccion" class="label-radio">Envio a dirección (+2,99€) </label>
+                    </div>
+                </div>
+                    <div class="botones">
+                        <input type="submit">
+                        <input type="reset">
+                    </div>
+                    <div class="sup"><span>&copy; Guillermo Illera</span></div>
+                
+            </form>
+
+        </div>
+        <!-- He creado el formulario para comprar el carné juvenil.-->
+    </main>
+    <footer>
+        <div class="rrss">
+            <div class="p"><p>¡Siguenos en Facebook!</p></div>
+            <div class="enlace"><a href="https://www.facebook.com/casadeculturalaredo/"><img src="img/iconofb.png" alt="Icono material design de facebook"  width="100px" style="margin-left: -30%;"></a></div>
+        </div>
+        <div class="enlacesfooter">
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_top">Volver a home</a></li>
+                    <li><a href="cursos.html">Anterior</a></li>
+                    <li><a href="contacto.html">Siguiente</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- Aqui he creado el footer de la página web, con una imagen para ir a la página web del facebook de la casa de cultura y los tres enlaces para navegar
+        que nos pediste.-->
+</body>
+</html>

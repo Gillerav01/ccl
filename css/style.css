@@ -1,0 +1,525 @@
+/* Css común a todas las webs, header y footer.*/
+*::selection {
+    background: #000000;
+    color: #ffffff;
+}
+header {
+    width: 100%;
+    height: 25vh;
+}
+/* Le doy al header un width de 100% de un height de 25 de visualport y hago que cuando
+se seleccione cualquier parte del documento tenga un fondo negro y una letra blanca*/
+
+.logo {
+    display: flex;
+}
+
+/* Pongo el logo en modo flexbox*/
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, .9);
+    position: fixed;
+    border-bottom: 2px solid rgba(0,0,0, .4);
+}
+
+.menu:hover {
+    border-bottom: 2px solid rgba(0,0,0, 1);
+}
+/*Formateo y decoro el menú de navegación y haco que esté alineado con el logo. También hago que el menú se quede pegado en la pantalla para
+que siempre esté visibile para el usuario, así facilitando una navegación rápida.*/
+
+nav ul li {
+    display: inline;
+    width: 7%;
+}
+
+/*Determino el tamaño de los elementos de la lista y hago que esten alineados*/
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.3rem;
+    font-family: 'Cormorant Garamond', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+
+/*Formateo los links, les doy margen y los hago mas grandes, uso una fuente personalizada para darle un toque "antiguo*/
+
+nav ul li a:hover {
+    color: #ffffff;
+    background: #000000;
+    text-decoration: underline;
+}
+
+/*Le doy formato para que cuando se ponga el ratón encima cambie el fondo, el color y la decoración.*/
+
+section {
+    width: 100%;
+} 
+
+
+footer {
+    border-top: 2px solid rgba(0,0,0, .4);
+    display: flex;
+    justify-items: save;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+footer:hover {
+    border-top: 2px solid rgba(0,0,0, 1);
+}
+
+.rrss {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 45%;
+}
+
+.enlace {
+    display: block;
+    margin-left: 36%;
+}
+/* Le doy formato al footer */
+
+/* Le doy un 100% de width a todos los sections*/
+p {
+    font-size: 1.2rem;
+}
+h1, p, label, input, textarea{
+    font-family: 'Cormorant Garamond', Verdana, Geneva, Tahoma, sans-serif;  
+    font-weight: 700; 
+}
+
+label {
+    font-size: 1.6rem;
+}
+
+.label-check {
+    font-size: 1.1rem;
+}
+select {
+    font-family: 'Cormorant Garamond', Verdana, Geneva, Tahoma, sans-serif;   
+    font-weight: 700; 
+    font-size: 1.3rem;
+}
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Cormorant Garamond', Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+/*Formateo todos los parrafos y headers.*/
+
+.centrar-t {
+    text-align: center;
+}
+
+
+/* Creo Una clase global para centrar los textos que yo quiera centrar*/
+/*Estilos para index.html*/
+.index-header {
+    height: 100vh;
+    background: url("../img/fondo.jpg") #281a0c;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+/*Le doy un fondo al header del index, le digo que ocupe todo lo que pueda sin que se deteriore, le pego a la pagina para que haga un efecto
+parallax que me gusta mucho y le da un toque algo mas moderno*/
+
+.horarios tr, td, th {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Cormorant Garamond', Verdana, Geneva, Tahoma, sans-serif;  
+    font-weight: 700;
+}
+
+th {
+    font-size: 1.4rem;
+}
+
+td {
+    font-size: 1.2rem;
+}
+
+/*Formateo la maldita tabla*/
+
+th:hover, td:hover {
+    background: #dadada;
+}
+
+.sinborde {
+    border: none;
+}
+
+.sinborde:hover {
+    background: #ffffff;
+}
+
+/* Le agrego unos cambios para que cuando se pase el ratón por encima se cambie el fondo de perfil por un gris que me parece que queda bien
+   y hago una pequeña trampa para que no se cambie de color la celda fantasma.
+*/
+
+.index-main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Le doy display flex al main del index y una dirección en columna*/
+.horarios div {
+    width: auto;
+}
+
+.horarios div table {
+    margin: 0px auto;
+}
+
+/*Centro el horario en la pagina*/
+
+.ubicacion iframe {
+    width: 98%;
+    display: block;
+    margin: auto;
+}
+
+/*Formateo la ubicación y la centro*/
+/* Se terminan los estilos para index.html */
+/* Comienzan los estilos para contacto.html*/
+form {
+    border: 2px solid rgba(0, 0, 0, .4);
+    width: 50%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+form:hover {
+    border: 2px solid rgba(0, 0, 0, 1);
+}
+
+/* Creo unos estilos generales para los formularios*/
+
+.nomyape {
+    display: flex;
+    width: 100%;
+}
+
+.nombre, .apellido {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.nombre input, .apellido input {
+    margin: auto;
+    width: 80%;
+    padding: 2%;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.email input {
+    width: 90%;
+    margin: auto;
+    padding: 1%;
+}
+
+.motivo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+.motivo select {
+    width:92%;
+    padding: 1%;
+    margin: auto;
+    margin-bottom: 2%;
+
+}
+
+.motivo select option {
+    font-family: 'Cormorant Garamond', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.textarea textarea {
+        resize: none;
+}
+.checkboxes {
+    margin-bottom: 2%;
+}
+
+.botones {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    border-bottom: 3%;
+}
+input[type="submit"],
+input[type="reset"]{
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    width: 45%;
+    padding: 1% 2%;
+    font-size: 1.2rem;
+}
+/* Ahora he creado unos estilos especificos para el formulario de contacto, aunque probablemente los vaya a reutilizar.*/
+.texto {
+    border: 2px solid #000000;
+    opacity: .4;
+}
+.texto:hover,
+.texto:focus {
+    border: 2px solid #000000;
+    opacity: 1;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+/* Creo unos estilos generales para todos los inputs de tipo texto, submit y reset.*/
+/* Terminan los estilos para el contacto.html*/
+/*Empiezan los estilos para la biblioteca.html*/
+
+.header-biblio {
+    height: 70vh;
+    background: url("../img/BibliotecaLaredo.jpg") #dadada;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+    margin-bottom: 5%;
+}
+
+/* Creo el header de la pagina biblio, incluyendo una imagen de fondo fijada para hacer un efecto chulo*/
+
+.DNI {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.DNI input {
+    width: 90%;
+    margin: auto;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+.telefono {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.telefono input {
+    width: 90%;
+    margin: auto;
+    padding: 1%;
+}
+
+.discapacidad .si #con,
+.discapacidad .no #sin {
+    display: none;
+}
+.discapacidad {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+form input[type="radio"]:checked + .label-radio {
+	border-bottom: 2px solid rgba(0, 0, 0, 1);
+}
+
+/* Agrego estilos para los elementos del formulario para el carné de biblioteca,
+   puesto que anteriormente no había añadido estilos para estos, también he reutilizado
+   estilos usados anteriormente.
+*/
+
+/* Cursos */
+
+.submenu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.submenu ul li a {
+    color: #000000;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.3rem;
+    font-family: 'Cormorant Garamond', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+
+/*Formateo los links, les doy margen y los hago mas grandes, uso una fuente personalizada para darle un toque "antiguo*/
+
+.submenu ul li a:hover {
+    color: #ffffff;
+    background: #000000;
+    text-decoration: underline;
+}
+
+.lista_cursos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pagina_cursos {
+    display: flex;
+    flex-direction: column;
+}
+
+.curso {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+/* Creo el contenedor de las fotos y los titulos de los cursos, también los organizo
+   de modo que quede como si fuera una galería
+*/
+
+.curso img {
+    width: 100%;
+    height: 60%;
+}
+
+/* Le cambio la altura a las fotos porque quedaban muy raras, aun siguen quedando raras pero bueno, 
+   arreglarlo con photoshop es un trabajo innecesario ahora mismo... */
+
+/* Información juvenil */
+
+.info-juv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info-juv img{
+    width: 30%;
+}
+
+/* Organizo el espacio de la lista de definición del punto de información juvenil
+   y de la foto.
+*/
+dl, dt, dd {
+    width: 60%;
+    font-family: 'Cormorant Garamond', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+/* Formateo la fuente, el tamaño y la fuerza de esta de la lista de definición. Además
+   de darle un width para que encaje bien con la foto. */
+.ventajas li {
+    font-family: 'Cormorant Garamond', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: 25%;
+}
+
+/* Formateo y le doy margen a los list items  */
+
+.carnet-juv{
+    width: 100%;
+}
+
+.metodo-pago .pago-credito #credito,
+.metodo-pago .pago-transferencia #transferencia,
+.metodo-pago .pago-paypal #paypal,
+.metodo-pago .pago-oficina #oficina {
+    display: none;
+}
+.metodo-pago {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+
+}
+
+.metodo-envio {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.metodo-envio .metodo-informacion #pinf,
+.metodo-envio .metodo-direccion #direccion {
+    display: none;
+}
+
+.metodo-informacion {
+    width: 40%;
+}
+
+.metodo-direccion {
+    width: 48%;
+}
+
+/* Aqui he formateado todo el formulario, a parte de las reglas ya creadas para darle formato
+anteriormente.*/
+
+.sup {
+    margin-top: 4%;
+}
+/* Esta es una pequeña trampa para poner margen en el formulario*/
+
+.explicacion {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+.explicacion img{
+    width: 30%;
+}
+
+/* Aqui le puse un formateo similar a info-juv para que se muestre la explicación y la 
+   foto al mismo nivel.*/

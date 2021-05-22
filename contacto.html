@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Dr. Velasco</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link  rel="icon" href="img/favicon.ico" type="image/ico"/>
+
+</head>
+<body>
+    <header id="inicio">
+        <div class="menu secundaria">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo de la casa de cultura">
+                <h1>Casa de cultura <br> Dr. Velasco</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="btn-inicio">Inicio</a></li>
+                    <li><a href="index.html#horarios" id="btn-horarios">Horario</a></li>
+                    <li><a href="index.html#ubicacion" id="btn-ubicacion">Ubicación</a></li>
+                    <li><a href="biblioteca.html">Biblioteca</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="inforjuv.html">Infor. Juvenil</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+              <!-- Aqui lo que he hecho ha sido crear un menú de navegación--->
+        </div>
+    </header>
+    <main class="contacto">
+        <h1 class="centrar-t">Contacte con nosotros</h1>
+        <form action="#" class="contacto">
+            <div class="nomyape">
+                <div class="nombre">
+                    <label for="nombre" class="centrar-t">Nombre *</label>
+                    <input type="text" placeholder="¡Escriba aquí su nombre!" class="texto" id="nombre" required>
+                </div>
+                <div class="apellido">
+                    <label for="apellidos" class="centrar-t">Apellidos </label>
+                    <input type="text" placeholder="¡Escriba aquí sus apellidos!" class="texto" id="apellidos">
+                </div>
+            </div>
+            <div class="email centrar-t">
+                <label for="correo">Escriba su correo aqui *</label>
+                <input type="email" placeholder="¡Escriba aqui su correo!" class="texto" id="correo" required>
+            </div>
+            <div class="motivo">
+                <label for="motivo" class="centrar-t">Motivo de su contacto</label>
+                <select name="motivos" id="motivo" class="texto">
+                    <option value="dudacurso">Dudas sobre algún curso</option>
+                    <option value="dudabiblio">Duda relacionada con la biblioteca</option>
+                    <option value="problemcarnebiblio">Problema con el carné de biblioteca</option>
+                    <option value="problemadevlibro">Problema con la devolucion de libros</option>
+                    <option value="solicitarinfo">Solicitar información del Punto de Información Juvenil</option>
+                    <option value="dudainfojuv">Pregunta sobre Punto de Información Juvenil</option>
+                    <option value="problemcarnejuv">Problema con el carné juvenil</option>
+                    <option value="sugerencia">Sugerencias</option>
+                    <option value="probpago">Problemas de pago</option>
+                    <option value="otros">Otros...</option>
+                </select>
+            </div>
+            <div class="textarea">
+                <label for="mensaje" class="centrar-t">Escriba su mensaje aqui *</label>
+                <textarea name="mensaje" id="mensaje" cols="60" rows="4" placeholder="¡Escriba su mensaje aqui!" class="texto" required ></textarea>
+            </div>
+            <div class="checkboxes">
+                <div class="spam">
+                    <input type="checkbox" id="spam" value="spam" name="spam">
+                    <label for="spam" class="label-check">Deseo recibir información referente a las futuras novedades en la Casa de Cultra Dr. Velasco.</label>
+                </div>
+                <div class="tratamiento">
+                    <input type="checkbox" id="tratamiento" value="tratamiento" name="tratamiento" required>
+                    <label for="tratamiento" class="label-check">Autorizo el tratamiento de mis datos personales por parte de la Casa de Cultura Dr. Velasco. *</label>
+                </div>
+            </div>
+            <div class="botones">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar todo">
+            </div>
+            <div><p>Todos los campos marcados con * son obligatorios</p></div>
+        </form>
+       <!-- Creo el formulario de contacto--> 
+    </main>
+    <footer>
+        <div class="rrss">
+            <div class="p"><p>¡Siguenos en Facebook!</p></div>
+            <div class="enlace"><a href="https://www.facebook.com/casadeculturalaredo/"><img src="img/iconofb.png" alt="Icono material design de facebook" width="100px" style="margin-left: -30%;"></a></div>
+        </div>
+        <div class="enlacesfooter">
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_top">Volver a home</a></li>
+                    <li><a href="inforjuv.html">Anterior</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- Aqui he creado el footer de la página web, con una imagen para ir a la página web del facebook de la casa de cultura y los tres enlaces para navegar
+        que nos pediste.-->
+</body>
+</html>

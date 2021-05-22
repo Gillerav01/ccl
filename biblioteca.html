@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Dr. Velasco</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link  rel="icon" href="img/favicon.ico" type="image/ico"/>
+
+</head>
+<body>
+    <header id="biblioteca" class="header-biblio">
+        <div class="menu">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo de la casa de cultura">
+                <h1>Casa de cultura <br> Dr. Velasco</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="btn-inicio">Inicio</a></li>
+                    <li><a href="index.html#horarios" id="btn-horarios">Horario</a></li>
+                    <li><a href="index.html#ubicacion" id="btn-ubicacion">Ubicación</a></li>
+                    <li><a href="biblioteca.html">Biblioteca</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="inforjuv.html">Infor. Juvenil</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+              <!-- Aqui lo que he hecho ha sido crear un menú de navegación--->
+        </div>
+    </header>
+        <div>
+            <p class="centrar-t">La Biblioteca municipal de Laredo está situada en la tercera planta de la Casa de Cultura Dr. Velasco, esta biblioteca se diseñó principalmente
+                para ser usada como sala de estudio, pero también hay mas de 4.000 libros que puedes pedir prestado con tu carné de biblioteca.
+            </p>
+        </div>
+        <!-- Una simple explicación de que es la biblioteca.-->
+        <section class="form-carnet">
+            <h3>Obtén tu carné de biblioteca</h3>
+            <form action="#">
+                <div class="nomyape">
+                    <div class="nombre">
+                        <label for="nombre" class="centrar-t">Nombre *</label>
+                        <input type="text" placeholder="¡Escriba aquí su nombre!" class="texto" id="nombre" required>
+                    </div>
+                    <div class="apellido">
+                        <label for="apellidos" class="centrar-t">Apellidos *</label>
+                        <input type="text" placeholder="¡Escriba aquí sus apellidos!" class="texto" id="apellidos">
+                    </div>
+                </div>
+                <div class="DNI">
+                    <label for="dni">DNI *</label>
+                    <input type="text" placeholder="Introduzca aquí su DNI" required class="texto">
+                </div>
+                <div class="telefono">
+                    <label for="teléfono">Numero de teléfono *</label>
+                    <input type="number" placeholder="Introduzca aquí su numero de teléfono" class="texto"> 
+                </div>
+                <label for="foto">Introduzca aquí su foto tamaño Carné *</label>
+                <input type="file" accept="image/png, image/jpeg">
+                <p>Por favor, indique si tiene una discapacidad. *</p>
+                <div class="discapacidad">
+                    <div class="si">
+                        <input type="radio" id="con" name="discapacidad" value="con">
+                        <label for="con" class="label-radio">Discapacidad fisica/sensorial</label>
+                    </div>
+                    <div class="no">
+                        <input type="radio" id="sin" name="discapacidad" value="sin" checked>
+                        <label for="sin" class="label-radio">Sin discapacidad</label>
+                    </div>
+                </div>
+                <div class="botones">
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+                <p>Todos los campos marcados con * son obligatorios</p>
+            </form>
+            <!-- Este es el formulario para pedir el carné de biblioteca.-->
+        </section>
+    </main>
+    <footer>
+        <div class="rrss">
+            <div class="p"><p>¡Siguenos en Facebook!</p></div>
+            <div class="enlace"><a href="https://www.facebook.com/casadeculturalaredo/"><img src="img/iconofb.png" alt="Icono material design de facebook"  width="100px" style="margin-left: -30%;"></a></div>
+        </div>
+        <div class="enlacesfooter">
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_top">Volver a home</a></li>
+                    <li><a href="index.html">Anterior</a></li>
+                    <li><a href="cursos.html">Siguiente</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- Aqui he creado el footer de la página web, con una imagen para ir a la página web del facebook de la casa de cultura y los tres enlaces para navegar
+        que nos pediste.-->
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Velasco</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/examen.css">
+</head>
+<body>
+    <header id="inicio">
+        <!-- Aqui lo que he hecho ha sido crear un menú de navegación--->
+    </header>
+    <main>
+    <form action="#" class="formulario-examen">
+        
+        <table class="tabla-examen">
+            <caption class="titulo-tabla">Datos personales</caption>
+            <tr>
+                <td><label for="nombre">Nombre </label></td>
+                <td><label for="email">Correo </label></td>
+                <td><label for="provincia">Provincia </label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="nombre"></td>
+                <td><input type="email" id="email"></td>
+                <td><input type="text" id="provincia"></td>
+            </tr>
+            <tr>
+                <td><p>Edad: </p></td>
+                <td><p>¿Como nos conociste?</p></td>
+                <td><p>¿Cuanto navega por internet?</p></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="020" name="edad" value="020" checked>
+                    <label for="020">0 - 20</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="amigo" value="amigo" name="amigo">
+                    <label for="amigo">A través de un amigo.</label>
+                </td>
+                <td>
+                    <select name="motivos" id="motivo" class="texto" size="2" multiple>
+                        <option value="2horas">2 horas al día</option>
+                        <option value="4horas">4 horas al día</option>
+                        <option value="10horas">10 horas a la semana</option> 
+                        <option value="20horas">20 horas al mes</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="2040" name="edad" value="2040">
+                    <label for="2040">20 - 40</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="buscador" value="buscador" name="buscador">
+                    <label for="buscador">A través de un buscador.</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="4060" name="edad" value="4060">
+                    <label for="4060">40 - 60</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="red" value="red" name="red">
+                    <label for="red">Navegando por la red.</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="60100" name="edad" value="60100">
+                    <label for="60100">60 - 100</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="otros" value="otros" name="otros">
+                    <label for="otros">Otros.</label>
+                </td>
+            </tr>
+            <tr>
+                <td> <p>Indica tu grado de satisfacción con nuestra web</p></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="numericamente">Numericamente</label>
+                    <input type="number" min="1" max="10">
+                    <input type="range" min="1" max="10">
+                </td>
+            </tr>
+        </table>
+        <table>
+            <caption class="titulo-tabla">Opinion sobre página web</caption>
+            <tr>
+                <td><p>¿Tiene alguna sugerencia?</p></td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea name="sugerencia" id="sugerencias" cols="90" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </main>
+    <footer>
+        <nav>
+            <div>
+                <a href="index.html">Volver a home</a>
+            </div>
+            <img src="img/social.png" alt="Foto de redes sociales" class="sociales">
+        </nav>
+    </footer>
+    <!-- Aqui he creado el footer de la página web, con una imagen para ir a la página web del facebook de la casa de cultura y los tres enlaces para navegar
+        que nos pediste.-->
+</body>
+</html>

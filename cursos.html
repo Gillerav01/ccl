@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Dr. Velasco</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link  rel="icon" href="img/favicon.ico" type="image/ico"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/cursos.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+</head>
+<body>
+    <header id="inicio">
+        <div class="menu">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo de la casa de cultura">
+                <h1>Casa de cultura <br> Dr. Velasco</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#horarios" id="btn-horarios">Horario</a></li>
+                    <li><a href="index.html#ubicacion" id="btn-ubicacion">Ubicación</a></li>
+                    <li><a href="biblioteca.html">Biblioteca</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="inforjuv.html">Infor. Juvenil</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+              <!-- Aqui lo que he hecho ha sido crear un menú de navegación--->
+        </div>
+    </header>
+    <main class="pagina_cursos">
+        <div class="submenu">
+            <ul>
+                <li><a href="#" id="btn-artistico">Talleres Artisticos</a></li>
+                <li><a href="#" id="btn-formativo">Cursos Formativos</a></li>
+                <li><a href="#" id="btn-musical">Escuela de música</a></li>
+            </ul>
+        </div>
+        <!-- Lo que he hecho ha sido crear un submenú para navegar rápidamente a los cursos que nos interesen.-->
+        <h3>Haz click <a href="https://www.laredo.es/09/archivos/boletin-inscripcion-2020-20211599492255.doc">AQUI</a> para descargarte el formulario de inscripción.</h3>
+        <section class="cursos">
+            <h3 id="artistico">Talleres Artisticos</h3>
+            <div class="lista_cursos">
+                <div class="curso">
+                    <img src="img/ballet.jpg" alt="Imagen sobre la clase artistica de Ballet" class="f_ballet">
+                    <p>Ballet</p>
+                </div>
+                <div class="curso">
+                    <img src="img/gimmantenimiento.jpg" alt="Imagen de la clase de Gimnasia de mantenimiento" class="f_gimmant">
+                    <p>Gimnasia de mantenimiento</p>
+                </div>
+                <div class="curso">
+                    <img src="img/ceramica.jpg" alt="Imagen de la clase de ceramica" class="f_ceramica">
+                    <p>Ceramica</p>
+                </div>
+                <div class="curso">
+                    <img src="img/teatro.jpg" alt="Imagen de la clase de teatro">
+                    <p>Teatro</p>
+                </div>
+            </div>
+        </section>
+        <section class="formativos">
+            <h3 id="formativos">Cursos formativos</h3>
+            <div class="lista_cursos">
+                <div class="curso">
+                    <img src="img/informatica.jpg" alt="Foto de la clase de informatica">
+                    <p>Informática</p>
+                </div>
+                <div class="curso">
+                    <img src="img/ingles.jpg" alt="Foto de la clase de inglés">
+                    <p>Inglés</p>
+                </div>
+            </div>
+        </section>
+        <section class="musica">
+            <h3 id="musicales">Escuela de Música</h3>
+            <div class="lista_cursos">
+                <div class="curso">
+                    <img src="img/guitarra.jpg" alt="Imagen de la clase de guitarra">
+                    <p>Guitarra</p>
+                </div>
+                <div class="curso">
+                    <img src="img/violin.jpg" alt="Imagen de la clase de violin">
+                    <p>Violin</p>
+                </div>
+                <div class="curso">
+                    <img src="img/flauta.jpg" alt="Imagen de la clase de flauta">
+                    <p>Flauta</p>
+                </div>
+                <div class="curso">
+                    <img src="img/piano.jpg" alt="Imagen de la clase de piano">
+                    <p>Piano</p>
+                </div>
+            </div>
+        </section>
+        <!-- Parece mucho pero lo unico que he hecho ha sido crear una especia de galería con las fotos de los cursos, y a su vez añadir un link a un documento Word.--> 
+    </main>
+    <footer>
+        <div class="rrss">
+            <div class="p"><p>¡Siguenos en Facebook!</p></div>
+            <div class="enlace"><a href="https://www.facebook.com/casadeculturalaredo/"><img src="img/iconofb.png" alt="Icono material design de facebook" width="100px" style="margin-left: -30%;"></a></div>
+        </div>
+        <div class="enlacesfooter">
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="top">Volver a home</a></li>
+                    <li><a href="biblioteca.html">Anterior</a></li>
+                    <li><a href="inforjuv.html">Siguiente</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- Aqui he creado el footer de la página web, con una imagen para ir a la página web del facebook de la casa de cultura y los tres enlaces para navegar
+        que nos pediste.-->
+</body>
+</html>
